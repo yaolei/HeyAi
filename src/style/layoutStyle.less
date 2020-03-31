@@ -1,0 +1,74 @@
+
+#layoutGride {
+    //SiderBar
+    height: auto;
+    & .rootSiderBar {
+        overflow: auto;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        z-index: 2;
+    }
+
+    //collapsed
+    & .trigger {
+        font-size: 20px;
+        line-height: 64px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+    & .trigger:hover {
+        color: #1890ff;
+      }
+    & .collapsedOpend {
+        margin-left: 12rem;
+    }
+    & .collapsedClose {
+        margin-left: 4rem;
+    }
+    & .logo {
+        height: 32px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 16px;
+      }
+    //Header
+    & .headerBarFixed {
+        overflow: auto;
+        padding: 0px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    //breadcrumb
+    & .mainBreadcrumb {
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+        margin-left: 15px;
+    }
+
+    //user badge menu
+    & .layoutBadegSettingColl {
+        float: right;
+        top: 15px;
+        margin-right: 13rem;
+        cursor: pointer;
+    }
+    & .layoutBadegSettingColled {
+        float: right;
+        top: 15px;
+        margin-right: 21rem;
+        cursor: pointer;
+    }
+    & .layoutUserMenuDrop {
+      width: 300px;
+    }
+}
+// header background
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+//Icon
+
+
+
