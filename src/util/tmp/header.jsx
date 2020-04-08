@@ -1,8 +1,8 @@
 import React,{ useState }  from 'react';
 import { Affix, Button, Carousel } from 'antd';
 import './css/bootstrap.min.css'
-// import './css/owl.carousel.css'
 import '../tmp/css/header.less'
+import beianIcon from "../tmp/images/beian.png";
 
 export default function Header() {
     const [container, setContainer] = useState(null);
@@ -58,6 +58,12 @@ export default function Header() {
                     <div className="navbar-header customFooter">
                     <div>Copyright © 1996 - 2018 Evan, All Rights Reserved</div>
                     <div style={{paddingLeft:'10rem'}}><a href="http://beian.miit.gov.cn">(辽ICP备19006292号-1)</a></div>
+                        <div style={{width :'300', margin: '0 auto', padding:'20 0'}}>
+                            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21021102000798" style={{display:'inline-block', textDecoration:'none', height:'20px',lineHeight:'20px'}}>
+                            <img src={beianIcon} style={{float:'left'}}/>
+                            <div style={{float:'left', height:'20px', lineHeight:'20px', margin: '0px 0px 0px 5px', color:'#939393'}}>辽公网安备 21021102000798号</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
